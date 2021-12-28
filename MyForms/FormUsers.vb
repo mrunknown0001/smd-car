@@ -9,10 +9,12 @@ Public Class FormUsers
     End Sub
 
     Private Sub FormUsers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        OpenCon()
-        cmd.Connection = con
+        'OpenCon()
+        'cmd.Connection = con
 
         Try
+            OpenCon()
+            cmd.Connection = con
             'For Role Pull
             cmd.CommandText = "SELECT id, name FROM roles"
 
@@ -77,7 +79,7 @@ Public Class FormUsers
             MessageBox.Show("Database Connection Error", "MySQL Database Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
         End Try
 
-        con.Close()
+        'con.Close()
     End Sub
 
 
@@ -118,11 +120,63 @@ Public Class FormUsers
         ValidateRequiredTextBox(TextBoxFirstName, "First Name is Required!")
         ValidateRequiredTextBox(TextBoxLastName, "Last Name is Required!")
         ValidateRequiredTextBox(TextBoxEmail, "Email is Required!")
-        ValidateRequiredTextBox(TextBoxPassword, "Passowrd is Required!")
+        ValidateRequiredComboBox(ComboBoxRole, "Role is Required")
+        ValidateRequiredComboBox(ComboBoxActive, "Active Status is Required")
+        If String.IsNullOrEmpty(TextBoxUserID.Text) Then
+            'New User
+            ValidateRequiredTextBox(TextBoxPassword, "Passowrd is Required!")
+
+            Try
+                OpenCon()
+                cmd.Connection = con
+                Dim role As String = ""
+                Dim active As Boolean = False
+                'Select Case for Active
+                Select Case ComboBoxActive.Text
+                    Case "Active"
+                        active = True
+                    Case "Inactive"
+                        active = False
+                End Select
+                Select Case ComboBoxRole.Text
+                    Case "Admin"
+                        role = 2
+                    Case "Super"
+                        role = 1
+                    Case "User"
+                        role = 3
+                End Select
+                cmd.CommandText = "INSERT INTO users (`first_name`, `last_name`, `middle_name`, `suffix_name`, `email`, `password`, `role_id`, `active`) 
+                VALUES ('" & TextBoxFirstName.Text & "', '" & TextBoxLastName.Text & "', '" & TextBoxMiddleName.Text & "', '" & TextBoxSuffixName.Text & "', '" & TextBoxEmail.Text & "', '" & TextBoxPassword.Text & "', '" & role & "', '" & active & "')"
+                cmd.ExecuteNonQuery()
+                MessageBox.Show(MsgUserAdded, TitleUserAdded, MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
+                con.Close()
+                IconButtonUsersFormClear.PerformClick()
+                'Reload Data Grid View
+
+                DataGridViewUsers.DataSource = Nothing
+                Dim myAdapter As New MySqlDataAdapter
+                Dim sql As String = "SELECT id, first_name, last_name, middle_name, suffix_name, 
+                        email, role_id, active FROM users"
+                Dim myCommand As New MySqlCommand
+
+                myCommand.CommandText = sql
+                myCommand.Connection = con
+                myAdapter.SelectCommand = myCommand
+                myAdapter.Fill(dtusers)
+                DataGridViewUsers.DataSource = dtusers
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
+            End Try
+        Else
+            'Update User
+            MsgBox("Update")
+        End If
     End Sub
 
     Private Sub IconButtonUsersFormClear_Click(sender As Object, e As EventArgs) Handles IconButtonUsersFormClear.Click
         'Clears all text and selected items on the form
+        TextBoxUserID.Clear()
         TextBoxFirstName.Clear()
         TextBoxLastName.Clear()
         TextBoxMiddleName.Clear()

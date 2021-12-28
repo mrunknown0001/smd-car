@@ -458,9 +458,9 @@ Partial Class FormUsers
         '
         Me.TextBoxUserID.Location = New System.Drawing.Point(54, 93)
         Me.TextBoxUserID.Name = "TextBoxUserID"
+        Me.TextBoxUserID.PlaceholderText = "HiddenTB - ID"
         Me.TextBoxUserID.Size = New System.Drawing.Size(150, 31)
         Me.TextBoxUserID.TabIndex = 4
-        Me.TextBoxUserID.Text = "HiddenTB - ID"
         Me.TextBoxUserID.Visible = False
         '
         'FormUsers

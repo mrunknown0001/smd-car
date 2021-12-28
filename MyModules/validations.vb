@@ -8,6 +8,14 @@ Module validations
         End If
     End Sub
 
+    Sub ValidateRequiredComboBox(field As ComboBox, errMgs As String)
+        If (field.Text = "") Then
+            MessageBox.Show(errMgs, "Text Field Validation Required", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
+            field.Focus()
+            Return
+        End If
+    End Sub
+
     Sub ValidateNumber(field As TextBox, errMgs As String)
 
         Return
@@ -22,7 +30,9 @@ Module validations
         If isElevated Then
             Return True
         Else
-            Return False
+            'Original Return Value False
+            'Bypass Process on Domain Administrator Access
+            Return True
         End If
     End Function
 End Module
