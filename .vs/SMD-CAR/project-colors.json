@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0f7f8aa5-02ad-40b6-880f-b5af7d9f6a40": {
+      "ProjectGuid": "0f7f8aa5-02ad-40b6-880f-b5af7d9f6a40",
+      "DisplayName": "SMD-CAR",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

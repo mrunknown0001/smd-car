@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="MyForms\FormAccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MyForms\FormFarms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MyForms\FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MyForms\FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MyForms\FormSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MyForms\FormUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MyForms\WelcomeSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
