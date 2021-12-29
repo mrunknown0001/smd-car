@@ -34,3 +34,10 @@ D:\Visual Studio\repos\SMD-CAR\bin\Debug\net6.0-windows\MetroFramework.dll
 D:\Visual Studio\repos\SMD-CAR\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
 D:\Visual Studio\repos\SMD-CAR\obj\Debug\net6.0-windows\SMD_CAR.FormFarms.resources
 D:\Visual Studio\repos\SMD-CAR\obj\Debug\net6.0-windows\SMD_CAR.FormSettings.resources
+D:\Visual Studio\repos\SMD-CAR\bin\Debug\net6.0-windows\System.DirectoryServices.AccountManagement.dll
+D:\Visual Studio\repos\SMD-CAR\bin\Debug\net6.0-windows\System.DirectoryServices.Protocols.dll
+D:\Visual Studio\repos\SMD-CAR\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.DirectoryServices.AccountManagement.dll
+D:\Visual Studio\repos\SMD-CAR\bin\Debug\net6.0-windows\runtimes\linux\lib\net6.0\System.DirectoryServices.Protocols.dll
+D:\Visual Studio\repos\SMD-CAR\bin\Debug\net6.0-windows\runtimes\osx\lib\net6.0\System.DirectoryServices.Protocols.dll
+D:\Visual Studio\repos\SMD-CAR\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.DirectoryServices.Protocols.dll
+D:\Visual Studio\repos\SMD-CAR\obj\Debug\net6.0-windows\SMD_CAR.FormAccess.resources

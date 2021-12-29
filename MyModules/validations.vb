@@ -1,5 +1,6 @@
 ﻿Imports System.Security.Principal
 Module validations
+
     Sub ValidateRequiredTextBox(field As TextBox, errMgs As String)
         If (field.Text = "") Then
             MessageBox.Show(errMgs, "Text Field Validation Required", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
@@ -32,7 +33,7 @@ Module validations
         Else
             'Original Return Value False
             'Bypass Process on Domain Administrator Access
-            Return True
+            Return False
         End If
     End Function
 End Module

@@ -27,23 +27,27 @@ Partial Class WelcomeSplash
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(WelcomeSplash))
         Me.MainLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.DetailsLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.Version = New System.Windows.Forms.Label()
         Me.ApplicationTitle = New System.Windows.Forms.Label()
         Me.TimerSplashWindow = New System.Windows.Forms.Timer(Me.components)
+        Me.IconPictureBoxSplashLogo = New FontAwesome.Sharp.IconPictureBox()
         Me.MainLayoutPanel.SuspendLayout()
         Me.DetailsLayoutPanel.SuspendLayout()
+        CType(Me.IconPictureBoxSplashLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MainLayoutPanel
         '
-        Me.MainLayoutPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainLayoutPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.MainLayoutPanel.ColumnCount = 2
         Me.MainLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 243.0!))
         Me.MainLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100.0!))
         Me.MainLayoutPanel.Controls.Add(Me.DetailsLayoutPanel, 1, 1)
         Me.MainLayoutPanel.Controls.Add(Me.ApplicationTitle, 1, 0)
+        Me.MainLayoutPanel.Controls.Add(Me.IconPictureBoxSplashLogo, 0, 0)
         Me.MainLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MainLayoutPanel.Location = New System.Drawing.Point(0, 0)
         Me.MainLayoutPanel.Name = "MainLayoutPanel"
@@ -95,6 +99,22 @@ Partial Class WelcomeSplash
         Me.TimerSplashWindow.Enabled = True
         Me.TimerSplashWindow.Interval = 5000
         '
+        'IconPictureBoxSplashLogo
+        '
+        Me.IconPictureBoxSplashLogo.BackColor = System.Drawing.SystemColors.Control
+        Me.IconPictureBoxSplashLogo.BackgroundImage = CType(resources.GetObject("IconPictureBoxSplashLogo.BackgroundImage"), System.Drawing.Image)
+        Me.IconPictureBoxSplashLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.IconPictureBoxSplashLogo.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.IconPictureBoxSplashLogo.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.IconPictureBoxSplashLogo.IconColor = System.Drawing.SystemColors.ControlText
+        Me.IconPictureBoxSplashLogo.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconPictureBoxSplashLogo.IconSize = 212
+        Me.IconPictureBoxSplashLogo.Location = New System.Drawing.Point(3, 3)
+        Me.IconPictureBoxSplashLogo.Name = "IconPictureBoxSplashLogo"
+        Me.IconPictureBoxSplashLogo.Size = New System.Drawing.Size(237, 212)
+        Me.IconPictureBoxSplashLogo.TabIndex = 2
+        Me.IconPictureBoxSplashLogo.TabStop = False
+        '
         'WelcomeSplash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
@@ -110,9 +130,11 @@ Partial Class WelcomeSplash
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.MainLayoutPanel.ResumeLayout(False)
         Me.DetailsLayoutPanel.ResumeLayout(False)
+        CType(Me.IconPictureBoxSplashLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents TimerSplashWindow As Timer
+    Friend WithEvents IconPictureBoxSplashLogo As FontAwesome.Sharp.IconPictureBox
 End Class

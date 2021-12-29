@@ -13,6 +13,10 @@
             IconButtonMainFormSettings.Visible = True
             IconButtonMainFormUserAccess.Enabled = True
             IconButtonMainFormUserAccess.Visible = True
+            IconButtonMainFormUserAccess.Enabled = True
+            IconButtonMainFormUserAccess.Visible = True
+            IconButtonMainFormSettings.Enabled = True
+            IconButtonMainFormSettings.Visible = True
 
         Else
             'Disable all admin menu and hide
@@ -24,6 +28,10 @@
             IconButtonMainFormSettings.Visible = False
             IconButtonMainFormUserAccess.Enabled = False
             IconButtonMainFormUserAccess.Visible = False
+            IconButtonMainFormUserAccess.Enabled = False
+            IconButtonMainFormUserAccess.Visible = False
+            IconButtonMainFormSettings.Enabled = False
+            IconButtonMainFormSettings.Visible = False
         End If
 
     End Sub
@@ -61,4 +69,17 @@
         End If
     End Sub
 
+    Private Sub IconButtonMainFormUserAccess_Click(sender As Object, e As EventArgs) Handles IconButtonMainFormUserAccess.Click
+        Me.Hide()
+        FormAccess.Show()
+    End Sub
+
+    Private Sub IconButtonMainFormSettings_Click(sender As Object, e As EventArgs) Handles IconButtonMainFormSettings.Click
+        Me.Hide()
+        FormSettings.Show()
+    End Sub
+
+    Private Sub PanelMainPane_Paint(sender As Object, e As PaintEventArgs) Handles PanelMainPane.Paint
+
+    End Sub
 End Class
