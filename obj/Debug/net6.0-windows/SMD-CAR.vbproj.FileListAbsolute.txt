@@ -28,9 +28,6 @@ D:\Visual Studio\repos\SMD-CAR\obj\Debug\net6.0-windows\SMD-CAR.genruntimeconfig
 D:\Visual Studio\repos\SMD-CAR\obj\Debug\net6.0-windows\SMD_CAR.FormMain.resources
 D:\Visual Studio\repos\SMD-CAR\obj\Debug\net6.0-windows\SMD_CAR.FormUsers.resources
 D:\Visual Studio\repos\SMD-CAR\obj\Debug\net6.0-windows\SMD_CAR.WelcomeSplash.resources
-D:\Visual Studio\repos\SMD-CAR\bin\Debug\net6.0-windows\MetroFramework.Design.dll
-D:\Visual Studio\repos\SMD-CAR\bin\Debug\net6.0-windows\MetroFramework.Fonts.dll
-D:\Visual Studio\repos\SMD-CAR\bin\Debug\net6.0-windows\MetroFramework.dll
 D:\Visual Studio\repos\SMD-CAR\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
 D:\Visual Studio\repos\SMD-CAR\obj\Debug\net6.0-windows\SMD_CAR.FormFarms.resources
 D:\Visual Studio\repos\SMD-CAR\obj\Debug\net6.0-windows\SMD_CAR.FormSettings.resources

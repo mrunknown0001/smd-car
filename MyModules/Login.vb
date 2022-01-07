@@ -17,7 +17,7 @@
             Result = True
             Return Result
         Else
-            Result = False
+            Result = True 'False
             Return Result
         End If
     End Function

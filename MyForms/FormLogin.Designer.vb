@@ -188,12 +188,12 @@ Partial Class FormLogin
         Me.IconButtonLogin.IconColor = System.Drawing.Color.White
         Me.IconButtonLogin.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButtonLogin.IconSize = 25
-        Me.IconButtonLogin.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.IconButtonLogin.Location = New System.Drawing.Point(191, 269)
         Me.IconButtonLogin.Name = "IconButtonLogin"
         Me.IconButtonLogin.Size = New System.Drawing.Size(175, 43)
         Me.IconButtonLogin.TabIndex = 10
         Me.IconButtonLogin.Text = "Login"
+        Me.IconButtonLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButtonLogin.UseVisualStyleBackColor = False
         '
         'IconButtonCancel
@@ -206,12 +206,12 @@ Partial Class FormLogin
         Me.IconButtonCancel.IconColor = System.Drawing.Color.White
         Me.IconButtonCancel.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButtonCancel.IconSize = 25
-        Me.IconButtonCancel.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.IconButtonCancel.Location = New System.Drawing.Point(420, 269)
         Me.IconButtonCancel.Name = "IconButtonCancel"
         Me.IconButtonCancel.Size = New System.Drawing.Size(175, 43)
         Me.IconButtonCancel.TabIndex = 11
         Me.IconButtonCancel.Text = "Cancel"
+        Me.IconButtonCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButtonCancel.UseVisualStyleBackColor = False
         '
         'FormLogin
@@ -219,7 +219,7 @@ Partial Class FormLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(659, 366)
         Me.ControlBox = False
         Me.Controls.Add(Me.IconButtonCancel)

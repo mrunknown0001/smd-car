@@ -11,7 +11,7 @@ Module validations
 
     Sub ValidateRequiredComboBox(field As ComboBox, errMgs As String)
         If (field.Text = "") Then
-            MessageBox.Show(errMgs, "Text Field Validation Required", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
+            MessageBox.Show(errMgs, "ComboBox Field Validation Required", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
             field.Focus()
             Return
         End If
@@ -33,7 +33,7 @@ Module validations
         Else
             'Original Return Value False
             'Bypass Process on Domain Administrator Access
-            Return False
+            Return True 'False
         End If
     End Function
 End Module

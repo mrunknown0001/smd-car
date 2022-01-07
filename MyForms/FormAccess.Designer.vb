@@ -26,12 +26,12 @@ Partial Class FormAccess
         Me.PanelAccessHeader = New System.Windows.Forms.Panel()
         Me.LabelAccess = New System.Windows.Forms.Label()
         Me.GroupBoxAccess = New System.Windows.Forms.GroupBox()
+        Me.TextBoxAdUser = New System.Windows.Forms.TextBox()
         Me.LabelAdUserSearched = New System.Windows.Forms.Label()
         Me.IconButtonAdUserSearch = New FontAwesome.Sharp.IconButton()
         Me.TextBoxAdUserSearch = New System.Windows.Forms.TextBox()
         Me.DataGridViewAccess = New System.Windows.Forms.DataGridView()
         Me.TextBoxSearchUserAccess = New System.Windows.Forms.TextBox()
-        Me.TextBoxAdUser = New System.Windows.Forms.TextBox()
         Me.PanelAccessHeader.SuspendLayout()
         Me.GroupBoxAccess.SuspendLayout()
         CType(Me.DataGridViewAccess, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -83,6 +83,15 @@ Partial Class FormAccess
         Me.GroupBoxAccess.TabIndex = 2
         Me.GroupBoxAccess.TabStop = False
         '
+        'TextBoxAdUser
+        '
+        Me.TextBoxAdUser.Location = New System.Drawing.Point(30, 178)
+        Me.TextBoxAdUser.Name = "TextBoxAdUser"
+        Me.TextBoxAdUser.PlaceholderText = "AD User - Hidden"
+        Me.TextBoxAdUser.Size = New System.Drawing.Size(262, 31)
+        Me.TextBoxAdUser.TabIndex = 3
+        Me.TextBoxAdUser.Visible = False
+        '
         'LabelAdUserSearched
         '
         Me.LabelAdUserSearched.AutoSize = True
@@ -101,13 +110,13 @@ Partial Class FormAccess
         Me.IconButtonAdUserSearch.IconChar = FontAwesome.Sharp.IconChar.Search
         Me.IconButtonAdUserSearch.IconColor = System.Drawing.Color.White
         Me.IconButtonAdUserSearch.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButtonAdUserSearch.IconSize = 25
-        Me.IconButtonAdUserSearch.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.IconButtonAdUserSearch.IconSize = 30
         Me.IconButtonAdUserSearch.Location = New System.Drawing.Point(338, 41)
         Me.IconButtonAdUserSearch.Name = "IconButtonAdUserSearch"
         Me.IconButtonAdUserSearch.Size = New System.Drawing.Size(146, 40)
         Me.IconButtonAdUserSearch.TabIndex = 1
         Me.IconButtonAdUserSearch.Text = "Search"
+        Me.IconButtonAdUserSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButtonAdUserSearch.UseVisualStyleBackColor = False
         '
         'TextBoxAdUserSearch
@@ -137,15 +146,6 @@ Partial Class FormAccess
         Me.TextBoxSearchUserAccess.PlaceholderText = "Search User Access.."
         Me.TextBoxSearchUserAccess.Size = New System.Drawing.Size(262, 39)
         Me.TextBoxSearchUserAccess.TabIndex = 4
-        '
-        'TextBoxAdUser
-        '
-        Me.TextBoxAdUser.Location = New System.Drawing.Point(30, 178)
-        Me.TextBoxAdUser.Name = "TextBoxAdUser"
-        Me.TextBoxAdUser.PlaceholderText = "AD User - Hidden"
-        Me.TextBoxAdUser.Size = New System.Drawing.Size(262, 31)
-        Me.TextBoxAdUser.TabIndex = 3
-        Me.TextBoxAdUser.Visible = False
         '
         'FormAccess
         '

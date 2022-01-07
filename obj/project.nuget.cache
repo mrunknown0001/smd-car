@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pnwGmzGSWWzhmoGDmr1JpR28Za0JPgJ5u2KvCtHH1X/2mP0o5mPS4fwLuHITpw3t8XQYr3S+1Kk1uBWarxB7fw==",
+  "dgSpecHash": "AGbHguittw3NcIG7roy6YRXaOuiz8R8HO7/WTQWIsewchBi1uiBYj7KnORkJF0Pn0YvlfoRoLU4gSwrIISE0Pw==",
   "success": true,
   "projectFilePath": "D:\\Visual Studio\\repos\\SMD-CAR\\SMD-CAR.vbproj",
   "expectedPackageFiles": [
@@ -10,7 +10,6 @@
     "C:\\Users\\IT Specialist\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
     "C:\\Users\\IT Specialist\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",
     "C:\\Users\\IT Specialist\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",
-    "C:\\Users\\IT Specialist\\.nuget\\packages\\metromodernui\\1.4.0\\metromodernui.1.4.0.nupkg.sha512",
     "C:\\Users\\IT Specialist\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\IT Specialist\\.nuget\\packages\\mysql.data\\8.0.27\\mysql.data.8.0.27.nupkg.sha512",
     "C:\\Users\\IT Specialist\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
@@ -27,16 +26,5 @@
     "C:\\Users\\IT Specialist\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "C:\\Users\\IT Specialist\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'MetroModernUI 1.4.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "MetroModernUI",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

@@ -93,6 +93,7 @@ Partial Class FormMain
         Me.IconButtonMainFormUserAccess.Size = New System.Drawing.Size(212, 41)
         Me.IconButtonMainFormUserAccess.TabIndex = 9
         Me.IconButtonMainFormUserAccess.Text = "Access"
+        Me.IconButtonMainFormUserAccess.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButtonMainFormUserAccess.UseVisualStyleBackColor = False
         '
         'IconButtonMainFormSettings
@@ -150,6 +151,7 @@ Partial Class FormMain
         Me.IconButtonMainFormFarms.Size = New System.Drawing.Size(212, 41)
         Me.IconButtonMainFormFarms.TabIndex = 6
         Me.IconButtonMainFormFarms.Text = "Farms"
+        Me.IconButtonMainFormFarms.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButtonMainFormFarms.UseVisualStyleBackColor = False
         '
         'IconButtonMainFormUsers
@@ -169,6 +171,7 @@ Partial Class FormMain
         Me.IconButtonMainFormUsers.Size = New System.Drawing.Size(212, 41)
         Me.IconButtonMainFormUsers.TabIndex = 5
         Me.IconButtonMainFormUsers.Text = "Users"
+        Me.IconButtonMainFormUsers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButtonMainFormUsers.UseVisualStyleBackColor = False
         '
         'LabelMainMenuSpacer

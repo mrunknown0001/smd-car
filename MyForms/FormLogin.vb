@@ -32,17 +32,17 @@ Public Class FormLogin
         'Tries to Open the Connection to the Database
         OpenCon()
 
-        If ValidateActiveDirectoryLogin() = False Then
-            MessageBox.Show("Error on User. User is not under " & domainName & " domain. Program will close now.", "AD User Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
-            End
-        Else
-            loggedUser = GetADUser()
-            timelogged = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")
-            'Show Splash Window
-            WelcomeSplash.Show()
-            Me.Visible = False
-            Me.ShowInTaskbar = False
-        End If
+        'If ValidateActiveDirectoryLogin() = False Then
+        '    MessageBox.Show("Error on User. User is not under " & domainName & " domain. Program will close now.", "AD User Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
+        '    End
+        'Else
+        '    loggedUser = GetADUser()
+        '    timelogged = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")
+        '    'Show Splash Window
+        '    WelcomeSplash.Show()
+        '    Me.Visible = False
+        '    Me.ShowInTaskbar = False
+        'End If
 
     End Sub
 

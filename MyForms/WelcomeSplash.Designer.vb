@@ -32,8 +32,8 @@ Partial Class WelcomeSplash
         Me.DetailsLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.Version = New System.Windows.Forms.Label()
         Me.ApplicationTitle = New System.Windows.Forms.Label()
-        Me.TimerSplashWindow = New System.Windows.Forms.Timer(Me.components)
         Me.IconPictureBoxSplashLogo = New FontAwesome.Sharp.IconPictureBox()
+        Me.TimerSplashWindow = New System.Windows.Forms.Timer(Me.components)
         Me.MainLayoutPanel.SuspendLayout()
         Me.DetailsLayoutPanel.SuspendLayout()
         CType(Me.IconPictureBoxSplashLogo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -41,6 +41,7 @@ Partial Class WelcomeSplash
         '
         'MainLayoutPanel
         '
+        Me.MainLayoutPanel.BackColor = System.Drawing.Color.White
         Me.MainLayoutPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.MainLayoutPanel.ColumnCount = 2
         Me.MainLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 243.0!))
@@ -94,14 +95,9 @@ Partial Class WelcomeSplash
         Me.ApplicationTitle.Text = "Corrective Action Report"
         Me.ApplicationTitle.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         '
-        'TimerSplashWindow
-        '
-        Me.TimerSplashWindow.Enabled = True
-        Me.TimerSplashWindow.Interval = 5000
-        '
         'IconPictureBoxSplashLogo
         '
-        Me.IconPictureBoxSplashLogo.BackColor = System.Drawing.SystemColors.Control
+        Me.IconPictureBoxSplashLogo.BackColor = System.Drawing.Color.Transparent
         Me.IconPictureBoxSplashLogo.BackgroundImage = CType(resources.GetObject("IconPictureBoxSplashLogo.BackgroundImage"), System.Drawing.Image)
         Me.IconPictureBoxSplashLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.IconPictureBoxSplashLogo.ForeColor = System.Drawing.SystemColors.ControlText
@@ -114,6 +110,11 @@ Partial Class WelcomeSplash
         Me.IconPictureBoxSplashLogo.Size = New System.Drawing.Size(237, 212)
         Me.IconPictureBoxSplashLogo.TabIndex = 2
         Me.IconPictureBoxSplashLogo.TabStop = False
+        '
+        'TimerSplashWindow
+        '
+        Me.TimerSplashWindow.Enabled = True
+        Me.TimerSplashWindow.Interval = 5000
         '
         'WelcomeSplash
         '

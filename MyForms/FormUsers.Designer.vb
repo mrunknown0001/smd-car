@@ -49,13 +49,6 @@ Partial Class FormUsers
         Me.TextBoxFirstName = New System.Windows.Forms.TextBox()
         Me.LabelFirstName = New System.Windows.Forms.Label()
         Me.DataGridViewUsers = New System.Windows.Forms.DataGridView()
-        Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.first_name = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.last_name = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.middle_name = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.suffix_name = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.email = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.active = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TextBoxSearchUser = New System.Windows.Forms.TextBox()
         Me.TextBoxUserID = New System.Windows.Forms.TextBox()
         Me.PanelUsersHeader.SuspendLayout()
@@ -135,17 +128,18 @@ Partial Class FormUsers
         Me.IconButtonUsersFormDelete.IconColor = System.Drawing.Color.White
         Me.IconButtonUsersFormDelete.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButtonUsersFormDelete.IconSize = 25
-        Me.IconButtonUsersFormDelete.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.IconButtonUsersFormDelete.Location = New System.Drawing.Point(878, 234)
         Me.IconButtonUsersFormDelete.Name = "IconButtonUsersFormDelete"
         Me.IconButtonUsersFormDelete.Size = New System.Drawing.Size(176, 43)
         Me.IconButtonUsersFormDelete.TabIndex = 21
         Me.IconButtonUsersFormDelete.Text = "Delete"
+        Me.IconButtonUsersFormDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButtonUsersFormDelete.UseVisualStyleBackColor = False
         '
         'IconButtonUsersFormEdit
         '
         Me.IconButtonUsersFormEdit.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.IconButtonUsersFormEdit.Enabled = False
         Me.IconButtonUsersFormEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.IconButtonUsersFormEdit.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.IconButtonUsersFormEdit.ForeColor = System.Drawing.Color.White
@@ -153,12 +147,12 @@ Partial Class FormUsers
         Me.IconButtonUsersFormEdit.IconColor = System.Drawing.Color.White
         Me.IconButtonUsersFormEdit.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButtonUsersFormEdit.IconSize = 25
-        Me.IconButtonUsersFormEdit.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.IconButtonUsersFormEdit.Location = New System.Drawing.Point(651, 234)
         Me.IconButtonUsersFormEdit.Name = "IconButtonUsersFormEdit"
         Me.IconButtonUsersFormEdit.Size = New System.Drawing.Size(176, 43)
         Me.IconButtonUsersFormEdit.TabIndex = 20
         Me.IconButtonUsersFormEdit.Text = "Edit"
+        Me.IconButtonUsersFormEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButtonUsersFormEdit.UseVisualStyleBackColor = False
         '
         'IconButtonUsersFormClear
@@ -171,12 +165,12 @@ Partial Class FormUsers
         Me.IconButtonUsersFormClear.IconColor = System.Drawing.Color.White
         Me.IconButtonUsersFormClear.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButtonUsersFormClear.IconSize = 25
-        Me.IconButtonUsersFormClear.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.IconButtonUsersFormClear.Location = New System.Drawing.Point(416, 234)
         Me.IconButtonUsersFormClear.Name = "IconButtonUsersFormClear"
         Me.IconButtonUsersFormClear.Size = New System.Drawing.Size(176, 43)
         Me.IconButtonUsersFormClear.TabIndex = 19
         Me.IconButtonUsersFormClear.Text = "Clear"
+        Me.IconButtonUsersFormClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButtonUsersFormClear.UseVisualStyleBackColor = False
         '
         'IconButtonUsersFormSave
@@ -189,12 +183,12 @@ Partial Class FormUsers
         Me.IconButtonUsersFormSave.IconColor = System.Drawing.Color.White
         Me.IconButtonUsersFormSave.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButtonUsersFormSave.IconSize = 25
-        Me.IconButtonUsersFormSave.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
         Me.IconButtonUsersFormSave.Location = New System.Drawing.Point(192, 234)
         Me.IconButtonUsersFormSave.Name = "IconButtonUsersFormSave"
         Me.IconButtonUsersFormSave.Size = New System.Drawing.Size(176, 43)
         Me.IconButtonUsersFormSave.TabIndex = 4
         Me.IconButtonUsersFormSave.Text = "Save"
+        Me.IconButtonUsersFormSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButtonUsersFormSave.UseVisualStyleBackColor = False
         '
         'ComboBoxActive
@@ -362,15 +356,14 @@ Partial Class FormUsers
         Me.DataGridViewUsers.AllowUserToResizeRows = False
         Me.DataGridViewUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridViewUsers.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridViewUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridViewUsers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.first_name, Me.last_name, Me.middle_name, Me.suffix_name, Me.email, Me.active})
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
@@ -380,70 +373,16 @@ Partial Class FormUsers
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridViewUsers.DefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridViewUsers.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter
+        Me.DataGridViewUsers.EnableHeadersVisualStyles = False
         Me.DataGridViewUsers.Location = New System.Drawing.Point(43, 453)
         Me.DataGridViewUsers.MultiSelect = False
         Me.DataGridViewUsers.Name = "DataGridViewUsers"
         Me.DataGridViewUsers.ReadOnly = True
+        Me.DataGridViewUsers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
         Me.DataGridViewUsers.RowHeadersWidth = 70
         Me.DataGridViewUsers.RowTemplate.Height = 33
         Me.DataGridViewUsers.Size = New System.Drawing.Size(1414, 315)
         Me.DataGridViewUsers.TabIndex = 2
-        '
-        'id
-        '
-        Me.id.DataPropertyName = "id"
-        Me.id.HeaderText = "ID"
-        Me.id.MinimumWidth = 8
-        Me.id.Name = "id"
-        Me.id.ReadOnly = True
-        '
-        'first_name
-        '
-        Me.first_name.DataPropertyName = "first_name"
-        Me.first_name.HeaderText = "First Name"
-        Me.first_name.MinimumWidth = 8
-        Me.first_name.Name = "first_name"
-        Me.first_name.ReadOnly = True
-        '
-        'last_name
-        '
-        Me.last_name.DataPropertyName = "last_name"
-        Me.last_name.HeaderText = "Last Name"
-        Me.last_name.MinimumWidth = 8
-        Me.last_name.Name = "last_name"
-        Me.last_name.ReadOnly = True
-        '
-        'middle_name
-        '
-        Me.middle_name.DataPropertyName = "middle_name"
-        Me.middle_name.HeaderText = "Middle Name"
-        Me.middle_name.MinimumWidth = 8
-        Me.middle_name.Name = "middle_name"
-        Me.middle_name.ReadOnly = True
-        '
-        'suffix_name
-        '
-        Me.suffix_name.DataPropertyName = "suffix_name"
-        Me.suffix_name.HeaderText = "Suffix Name"
-        Me.suffix_name.MinimumWidth = 8
-        Me.suffix_name.Name = "suffix_name"
-        Me.suffix_name.ReadOnly = True
-        '
-        'email
-        '
-        Me.email.DataPropertyName = "email"
-        Me.email.HeaderText = "Email"
-        Me.email.MinimumWidth = 8
-        Me.email.Name = "email"
-        Me.email.ReadOnly = True
-        '
-        'active
-        '
-        Me.active.DataPropertyName = "active"
-        Me.active.HeaderText = "Active"
-        Me.active.MinimumWidth = 8
-        Me.active.Name = "active"
-        Me.active.ReadOnly = True
         '
         'TextBoxSearchUser
         '
@@ -514,12 +453,5 @@ Partial Class FormUsers
     Friend WithEvents IconButtonUsersFormClear As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButtonUsersFormDelete As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButtonUsersFormEdit As FontAwesome.Sharp.IconButton
-    Friend WithEvents id As DataGridViewTextBoxColumn
-    Friend WithEvents first_name As DataGridViewTextBoxColumn
-    Friend WithEvents last_name As DataGridViewTextBoxColumn
-    Friend WithEvents middle_name As DataGridViewTextBoxColumn
-    Friend WithEvents suffix_name As DataGridViewTextBoxColumn
-    Friend WithEvents email As DataGridViewTextBoxColumn
-    Friend WithEvents active As DataGridViewTextBoxColumn
     Friend WithEvents TextBoxUserID As TextBox
 End Class
