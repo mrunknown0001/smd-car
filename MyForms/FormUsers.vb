@@ -115,7 +115,7 @@ Public Class FormUsers
 
             con.Close()
         Catch ex As Exception
-            MessageBox.Show("Database Connection Error. " & ex.Message, "MySQL Database Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
+            MessageBox.Show(MsgDatabaceConnectionError & ex.Message, TitleDatabaseConnectionError, MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
         End Try
 
         Return String.Empty
@@ -294,7 +294,7 @@ Public Class FormUsers
     End Sub
 
     Private Sub IconButtonUsersFormClear_Click(sender As Object, e As EventArgs) Handles IconButtonUsersFormClear.Click
-        Dim result As DialogResult = MessageBox.Show("Are you sure you want to clear field contents??", "Confirm Clear Fields", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1)
+        Dim result As DialogResult = MessageBox.Show(MsgClearContent, TitleClearContent, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1)
         If (result = DialogResult.Yes) Then
             ClearFields()
         End If
@@ -314,7 +314,7 @@ Public Class FormUsers
     End Sub
 
     Private Sub TextBoxSearchUser_TextChanged(sender As Object, e As EventArgs) Handles TextBoxSearchUser.TextChanged
-        Dim cleanString As String = Regex.Replace(TextBoxSearchUser.Text, "[^A-Za-z0-9\-/]", "")
+        Dim cleanString As String = Regex.Replace(TextBoxSearchUser.Text, "[^A-Za-z0-9\-/]", "") 'Removes Special Characters
         'Search Query for DatagridView for Users
         Dim strquery As String = "`First Name` LIKE '%" & cleanString &
             "%' OR `Last Name` LIKE '%" & cleanString &
@@ -328,10 +328,10 @@ Public Class FormUsers
     End Sub
 
     Private Sub IconButtonUsersFormDelete_Click(sender As Object, e As EventArgs) Handles IconButtonUsersFormDelete.Click
-        Dim result As DialogResult = MessageBox.Show("Are you sure you want to delete the user?", "Confirm User Deletion", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1)
+        Dim result As DialogResult = MessageBox.Show(MsgUserDelete, TitleUserDelete, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1)
         If (result = DialogResult.Yes) Then
             If String.IsNullOrEmpty(TextBoxUserID.Text) Then
-                MessageBox.Show("No user to delete. Please check selected user.", "Deletion Error", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
+                MessageBox.Show(MsgNoUserToDelete, TitleDeleteError, MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
                 Return
             End If
             Try

@@ -16,7 +16,7 @@
         Else
             MessageBox.Show(MsgAdUserSearchFail, TitleAdUserSearch, MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
 
-            LabelAdUserSearched.Text = "User not found!"
+            LabelAdUserSearched.Text = MsgUserNotFound
         End If
     End Sub
 End Class

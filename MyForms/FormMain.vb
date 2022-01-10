@@ -43,7 +43,7 @@
 
 
     Private Sub ButtonMainFormClose_Click(sender As Object, e As EventArgs) Handles ButtonMainFormClose.Click
-        Dim ForceCloseResponce As DialogResult = MessageBox.Show("Are you sure you want to Force Close All Window?", "Force Close App", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1)
+        Dim ForceCloseResponce As DialogResult = MessageBox.Show(MsgForceCloseApp, TitleForCloseApp, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1)
         If (ForceCloseResponce = DialogResult.Yes) Then
             'Log codes place here
             con.Close()
@@ -62,7 +62,7 @@
     End Sub
 
     Private Sub IconButtonMainFormLogout_Click(sender As Object, e As EventArgs) Handles IconButtonMainFormLogout.Click
-        Dim LogoutResponce As DialogResult = MessageBox.Show("Are you sure you want to Logout?", "Confirm Logout", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1)
+        Dim LogoutResponce As DialogResult = MessageBox.Show(MsgLogoutPrompt, TitleLogoutPrompt, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1)
         If (LogoutResponce = DialogResult.Yes) Then
             'Log codes place here
             End

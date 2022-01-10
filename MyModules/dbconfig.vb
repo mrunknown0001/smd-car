@@ -15,7 +15,7 @@ Module dbconfig
             con.Open()
             'MessageBox.Show("Connected!", "Database Connection Status", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
         Catch ex As Exception
-            MessageBox.Show("Database Connection Error. Program will close now. " & ex.Message, "MySQL Database Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
+            MessageBox.Show(MsgDatabaceConnectionError & ex.Message, TitleDatabaseConnectionError, MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
             End
         End Try
     End Sub

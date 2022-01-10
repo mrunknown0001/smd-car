@@ -3,7 +3,7 @@ Module validations
 
     Sub ValidateRequiredTextBox(field As TextBox, errMgs As String)
         If (field.Text = "") Then
-            MessageBox.Show(errMgs, "Text Field Validation Required", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
+            MessageBox.Show(errMgs, TitleTextFieldValidation, MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
             field.Focus()
             Return
         End If
@@ -11,7 +11,7 @@ Module validations
 
     Sub ValidateRequiredComboBox(field As ComboBox, errMgs As String)
         If (field.Text = "") Then
-            MessageBox.Show(errMgs, "ComboBox Field Validation Required", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
+            MessageBox.Show(errMgs, TitleComboBoxValidation, MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
             field.Focus()
             Return
         End If

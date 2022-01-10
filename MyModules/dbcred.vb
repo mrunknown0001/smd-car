@@ -39,7 +39,7 @@ Module dbcred
 
         Else
             'The .env file doesn't exist
-            MessageBox.Show("Critical Error. Environment file NOT found! Please Check your Credentials. Program is closing now.", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
+            MessageBox.Show(MsgEnvError, TitleEnvError, MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
             'Database Connection Error End Program
             End
         End If

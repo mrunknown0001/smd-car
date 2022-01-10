@@ -131,7 +131,7 @@ Partial Class FormUsers
         Me.IconButtonUsersFormDelete.Location = New System.Drawing.Point(878, 234)
         Me.IconButtonUsersFormDelete.Name = "IconButtonUsersFormDelete"
         Me.IconButtonUsersFormDelete.Size = New System.Drawing.Size(176, 43)
-        Me.IconButtonUsersFormDelete.TabIndex = 21
+        Me.IconButtonUsersFormDelete.TabIndex = 12
         Me.IconButtonUsersFormDelete.Text = "Delete"
         Me.IconButtonUsersFormDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButtonUsersFormDelete.UseVisualStyleBackColor = False
@@ -150,7 +150,7 @@ Partial Class FormUsers
         Me.IconButtonUsersFormEdit.Location = New System.Drawing.Point(651, 234)
         Me.IconButtonUsersFormEdit.Name = "IconButtonUsersFormEdit"
         Me.IconButtonUsersFormEdit.Size = New System.Drawing.Size(176, 43)
-        Me.IconButtonUsersFormEdit.TabIndex = 20
+        Me.IconButtonUsersFormEdit.TabIndex = 11
         Me.IconButtonUsersFormEdit.Text = "Edit"
         Me.IconButtonUsersFormEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButtonUsersFormEdit.UseVisualStyleBackColor = False
@@ -168,7 +168,7 @@ Partial Class FormUsers
         Me.IconButtonUsersFormClear.Location = New System.Drawing.Point(416, 234)
         Me.IconButtonUsersFormClear.Name = "IconButtonUsersFormClear"
         Me.IconButtonUsersFormClear.Size = New System.Drawing.Size(176, 43)
-        Me.IconButtonUsersFormClear.TabIndex = 19
+        Me.IconButtonUsersFormClear.TabIndex = 10
         Me.IconButtonUsersFormClear.Text = "Clear"
         Me.IconButtonUsersFormClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButtonUsersFormClear.UseVisualStyleBackColor = False
@@ -186,7 +186,7 @@ Partial Class FormUsers
         Me.IconButtonUsersFormSave.Location = New System.Drawing.Point(192, 234)
         Me.IconButtonUsersFormSave.Name = "IconButtonUsersFormSave"
         Me.IconButtonUsersFormSave.Size = New System.Drawing.Size(176, 43)
-        Me.IconButtonUsersFormSave.TabIndex = 4
+        Me.IconButtonUsersFormSave.TabIndex = 9
         Me.IconButtonUsersFormSave.Text = "Save"
         Me.IconButtonUsersFormSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButtonUsersFormSave.UseVisualStyleBackColor = False
@@ -200,7 +200,7 @@ Partial Class FormUsers
         Me.ComboBoxActive.Location = New System.Drawing.Point(765, 163)
         Me.ComboBoxActive.Name = "ComboBoxActive"
         Me.ComboBoxActive.Size = New System.Drawing.Size(289, 40)
-        Me.ComboBoxActive.TabIndex = 15
+        Me.ComboBoxActive.TabIndex = 8
         '
         'LabelActive
         '
@@ -223,7 +223,7 @@ Partial Class FormUsers
         Me.ComboBoxRole.Name = "ComboBoxRole"
         Me.ComboBoxRole.Size = New System.Drawing.Size(289, 40)
         Me.ComboBoxRole.Sorted = True
-        Me.ComboBoxRole.TabIndex = 13
+        Me.ComboBoxRole.TabIndex = 7
         '
         'LabelRole
         '
@@ -242,7 +242,7 @@ Partial Class FormUsers
         Me.TextBoxPassword.Name = "TextBoxPassword"
         Me.TextBoxPassword.PlaceholderText = "Password"
         Me.TextBoxPassword.Size = New System.Drawing.Size(289, 39)
-        Me.TextBoxPassword.TabIndex = 11
+        Me.TextBoxPassword.TabIndex = 6
         '
         'LabelPassword
         '
@@ -261,7 +261,7 @@ Partial Class FormUsers
         Me.TextBoxEmail.Name = "TextBoxEmail"
         Me.TextBoxEmail.PlaceholderText = "Email"
         Me.TextBoxEmail.Size = New System.Drawing.Size(289, 39)
-        Me.TextBoxEmail.TabIndex = 9
+        Me.TextBoxEmail.TabIndex = 5
         '
         'LabelEmail
         '
@@ -280,7 +280,7 @@ Partial Class FormUsers
         Me.TextBoxSuffixName.Name = "TextBoxSuffixName"
         Me.TextBoxSuffixName.PlaceholderText = "Suffix Name"
         Me.TextBoxSuffixName.Size = New System.Drawing.Size(289, 39)
-        Me.TextBoxSuffixName.TabIndex = 7
+        Me.TextBoxSuffixName.TabIndex = 4
         '
         'LabelSuffixName
         '
@@ -299,7 +299,7 @@ Partial Class FormUsers
         Me.TextBoxMiddleName.Name = "TextBoxMiddleName"
         Me.TextBoxMiddleName.PlaceholderText = "Middle Name"
         Me.TextBoxMiddleName.Size = New System.Drawing.Size(289, 39)
-        Me.TextBoxMiddleName.TabIndex = 5
+        Me.TextBoxMiddleName.TabIndex = 3
         '
         'LabelMiddleName
         '
@@ -318,7 +318,7 @@ Partial Class FormUsers
         Me.TextBoxLastName.Name = "TextBoxLastName"
         Me.TextBoxLastName.PlaceholderText = "Last Name"
         Me.TextBoxLastName.Size = New System.Drawing.Size(289, 39)
-        Me.TextBoxLastName.TabIndex = 3
+        Me.TextBoxLastName.TabIndex = 2
         '
         'LabelLastName
         '
@@ -382,7 +382,7 @@ Partial Class FormUsers
         Me.DataGridViewUsers.RowHeadersWidth = 70
         Me.DataGridViewUsers.RowTemplate.Height = 33
         Me.DataGridViewUsers.Size = New System.Drawing.Size(1414, 315)
-        Me.DataGridViewUsers.TabIndex = 2
+        Me.DataGridViewUsers.TabIndex = 14
         '
         'TextBoxSearchUser
         '
@@ -391,7 +391,7 @@ Partial Class FormUsers
         Me.TextBoxSearchUser.Name = "TextBoxSearchUser"
         Me.TextBoxSearchUser.PlaceholderText = "Search..."
         Me.TextBoxSearchUser.Size = New System.Drawing.Size(358, 40)
-        Me.TextBoxSearchUser.TabIndex = 3
+        Me.TextBoxSearchUser.TabIndex = 13
         '
         'TextBoxUserID
         '

@@ -1,4 +1,12 @@
 ﻿Module StringDefinitions
+    'Constant
+    Public timenow As String = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")
+    Public ActionLogin As String = "User Login"
+    Public ActionLogout As String = "User Logout"
+    Public ActionUserCreated As String = "User Created"
+    Public ActionUserUpdated As String = "User Updated"
+    Public ActionUserDeleted As String = "User Deleted"
+
     'Message Box
     Public MsgUserAdded As String = "New User Added"
     Public MsgUserUpdated As String = "User Information Updated"
@@ -9,10 +17,37 @@
     Public MsgForceCloseFormMain As String = "Are you sure you want to force close the application?"
     Public MsgAdUserSearchSuccess As String = "Active Directory User Found!"
     Public MsgAdUserSearchFail As String = "Active Directory User NOT Found!"
+    Public MsgDatabaceConnectionError As String = "Database Connection Error. "
+    Public MsgEnvError As String = "Critical Error. Environment file NOT found! Please Check your Credentials. Program is closing now."
+    Public MsgUserNotFound As String = "User not found!"
+    Public MsgEmailRequired As String = "Email field is Required!"
+    Public MsgPasswordRequired As String = "Password field is Required!"
+    Public MsgWelcomeMessage As String = "Welcome Back to the System!"
+    Public MsgCredentialError As String = "Login Error. Please Check your credentials"
+    Public MsgTooMayAttempt As String = "Too Many Attemps. Program is closing now!"
+    Public MsgForceCloseApp As String = "Are you sure you want to Force Close All Window?"
+    Public MsgClearContent As String = "Are you sure you want to clear field contents?"
+    Public MsgUserDelete As String = "Are you sure you want to delete the user?"
+    Public MsgNoUserToDelete As String = "No user to delete. Please check selected user."
+    Public MsgAccountLocked As String = "Account is Locked. Please Login later."
     'Title Message
     Public TitleUserAdded As String = "New User"
     Public TitleUserUpdated As String = "User Updated"
     Public TitleUserDeleted As String = "User Deleted"
     Public TitleAdUserSearch As String = "Active Directory User Search"
+    Public TitleDatabaseConnectionError As String = "MySQL Database Connection Error"
+    Public TitleEnvError As String = "Environment Variable Error"
+    Public TitleTextFieldValidation As String = "Text Field Validation Required"
+    Public TitleComboBoxValidation As String = "ComboBox Field Validation Required"
+    Public TitleLoginSuccess As String = "Login Success"
+    Public TitleLoginError As String = "Login Error"
+    Public TitleTooManyAttempt As String = "Too Many Attemps"
+    Public TitleLogoutPrompt As String = "Confirm Logout"
+    Public TitleForCloseApp As String = "Force Close App"
+    Public TitleClearContent As String = "Confirm Clear Fields"
+    Public TitleUserDelete As String = "Confirm User Deletion"
+    Public TitleDeleteError As String = "Deletion Error"
+    Public TitleAccountLocked As String = "Account Locked"
+
 
 End Module
