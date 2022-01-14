@@ -24,16 +24,23 @@ Module validations
 
 
     Public Function isAdmin()
-        Dim identity = WindowsIdentity.GetCurrent()
-        Dim principal = New WindowsPrincipal(identity)
-        Dim isElevated As Boolean = principal.IsInRole(WindowsBuiltInRole.Administrator)
-        'Administrator User Only
-        If isElevated Then
-            Return True
-        Else
-            'Original Return Value False
-            'Bypass Process on Domain Administrator Access
-            Return True 'False
-        End If
+        'Dim identity = WindowsIdentity.GetCurrent()
+        'Dim principal = New WindowsPrincipal(identity)
+        'Dim isElevated As Boolean = principal.IsInRole(WindowsBuiltInRole.Administrator)
+        ''Administrator User Only
+        'If isElevated Then
+        '    Return True
+        'Else
+        '    'Original Return Value False
+        '    'Bypass Process on Domain Administrator Access
+        '    Return True 'False
+        'End If
+
+        Dim adminRole As Boolean = True
+
+        'Search Current User if admin/super
+        'assign true value to adminRole if admin/super, otherwise assign false
+
+        Return adminRole
     End Function
 End Module

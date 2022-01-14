@@ -15,6 +15,8 @@
             IconButtonMainFormUserAccess.Visible = True
             IconButtonMainFormUserAccess.Enabled = True
             IconButtonMainFormUserAccess.Visible = True
+            IconButtonMainFormDepartment.Enabled = True
+            IconButtonMainFormDepartment.Visible = True
             IconButtonMainFormSettings.Enabled = True
             IconButtonMainFormSettings.Visible = True
 
@@ -30,6 +32,9 @@
             IconButtonMainFormUserAccess.Visible = False
             IconButtonMainFormUserAccess.Enabled = False
             IconButtonMainFormUserAccess.Visible = False
+            IconButtonMainFormDepartment.Enabled = False
+            IconButtonMainFormDepartment.Visible = False
+
             IconButtonMainFormSettings.Enabled = False
             IconButtonMainFormSettings.Visible = False
         End If
@@ -57,8 +62,8 @@
     End Sub
 
     Private Sub IconButtonMainFormFarms_Click(sender As Object, e As EventArgs) Handles IconButtonMainFormFarms.Click
-        Me.Hide()
         FormFarms.Show()
+        Me.Hide()
     End Sub
 
     Private Sub IconButtonMainFormLogout_Click(sender As Object, e As EventArgs) Handles IconButtonMainFormLogout.Click

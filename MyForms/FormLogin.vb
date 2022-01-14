@@ -49,7 +49,7 @@ Public Class FormLogin
 
     Private Sub IconButtonLogin_Click(sender As Object, e As EventArgs) Handles IconButtonLogin.Click
         Dim email As String = TextBoxEmail.Text
-        Dim password As String = TextBoxPassword.Text
+        Dim password As String = Encrypt(TextBoxPassword.Text)
         Dim is_deleted As String = "0"
 
         Dim myAdapter As New MySqlDataAdapter
@@ -89,9 +89,10 @@ Public Class FormLogin
                                 If DateTime.Compare(reader.GetValue("unlock_time"), timenow) < 0 Then
                                     con.Close()
 
-                                    Me.Hide()
+
                                     MessageBox.Show(MsgWelcomeMessage, TitleLoginSuccess, MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
                                     FormMain.Show()
+                                    Me.Hide()
                                     'Add Log for User Login
                                     AddLog(GetUserID(email), ActionLogin, 0, "Login", "", "", "")
                                     Return

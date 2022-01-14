@@ -222,8 +222,9 @@ Public Class FormUsers
                     If (TextBoxFirstName.Text Is "" Or TextBoxLastName.Text Is "" Or TextBoxEmail.Text Is "" Or ComboBoxRole.SelectedValue Is "" Or ComboBoxActive.SelectedValue Is "") Then
                         Return
                     Else
+                        Dim encpass = Encrypt(TextBoxPassword.Text)
                         cmd.CommandText = "INSERT INTO users (`first_name`, `last_name`, `middle_name`, `suffix_name`, `email`, `password`, `role_id`, `active`) 
-                VALUES ('" & TextBoxFirstName.Text & "', '" & TextBoxLastName.Text & "', '" & TextBoxMiddleName.Text & "', '" & TextBoxSuffixName.Text & "', '" & TextBoxEmail.Text & "', '" & TextBoxPassword.Text & "', '" & role & "', '" & active & "')"
+                VALUES ('" & TextBoxFirstName.Text & "', '" & TextBoxLastName.Text & "', '" & TextBoxMiddleName.Text & "', '" & TextBoxSuffixName.Text & "', '" & TextBoxEmail.Text & "', '" & encpass & "', '" & role & "', '" & active & "')"
                         cmd.ExecuteNonQuery()
                         MessageBox.Show(MsgUserAdded, TitleUserAdded, MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
                         con.Close()
@@ -260,6 +261,7 @@ Public Class FormUsers
                                         "
                         Else
                             'Update with updating password
+                            pass = Encrypt(TextBoxPassword.Text)
                             cmd.CommandText = "UPDATE users SET first_name='" & TextBoxFirstName.Text & "', 
                                             last_name='" & TextBoxLastName.Text & "',
                                             middle_name='" & TextBoxMiddleName.Text & "',

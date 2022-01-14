@@ -30,6 +30,7 @@
     Public MsgUserDelete As String = "Are you sure you want to delete the user?"
     Public MsgNoUserToDelete As String = "No user to delete. Please check selected user."
     Public MsgAccountLocked As String = "Account is Locked. Please Login later."
+
     'Title Message
     Public TitleUserAdded As String = "New User"
     Public TitleUserUpdated As String = "User Updated"
@@ -48,6 +49,5 @@
     Public TitleUserDelete As String = "Confirm User Deletion"
     Public TitleDeleteError As String = "Deletion Error"
     Public TitleAccountLocked As String = "Account Locked"
-
 
 End Module

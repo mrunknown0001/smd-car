@@ -40,6 +40,7 @@ Partial Class FormMain
         Me.StatusStripMainForm = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabelUser = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabelTimeLogged = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.IconButtonMainFormDepartment = New FontAwesome.Sharp.IconButton()
         Me.PanelSideMenu.SuspendLayout()
         Me.GroupBoxMenu.SuspendLayout()
         CType(Me.PictureBoxBGCLogo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,6 +62,7 @@ Partial Class FormMain
         '
         'GroupBoxMenu
         '
+        Me.GroupBoxMenu.Controls.Add(Me.IconButtonMainFormDepartment)
         Me.GroupBoxMenu.Controls.Add(Me.IconButtonMainFormUserAccess)
         Me.GroupBoxMenu.Controls.Add(Me.IconButtonMainFormSettings)
         Me.GroupBoxMenu.Controls.Add(Me.IconButtonMainFormLogout)
@@ -91,7 +93,7 @@ Partial Class FormMain
         Me.IconButtonMainFormUserAccess.Location = New System.Drawing.Point(3, 117)
         Me.IconButtonMainFormUserAccess.Name = "IconButtonMainFormUserAccess"
         Me.IconButtonMainFormUserAccess.Size = New System.Drawing.Size(212, 41)
-        Me.IconButtonMainFormUserAccess.TabIndex = 9
+        Me.IconButtonMainFormUserAccess.TabIndex = 3
         Me.IconButtonMainFormUserAccess.Text = "Access"
         Me.IconButtonMainFormUserAccess.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButtonMainFormUserAccess.UseVisualStyleBackColor = False
@@ -149,7 +151,7 @@ Partial Class FormMain
         Me.IconButtonMainFormFarms.Location = New System.Drawing.Point(3, 76)
         Me.IconButtonMainFormFarms.Name = "IconButtonMainFormFarms"
         Me.IconButtonMainFormFarms.Size = New System.Drawing.Size(212, 41)
-        Me.IconButtonMainFormFarms.TabIndex = 6
+        Me.IconButtonMainFormFarms.TabIndex = 2
         Me.IconButtonMainFormFarms.Text = "Farms"
         Me.IconButtonMainFormFarms.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButtonMainFormFarms.UseVisualStyleBackColor = False
@@ -169,7 +171,7 @@ Partial Class FormMain
         Me.IconButtonMainFormUsers.Location = New System.Drawing.Point(3, 35)
         Me.IconButtonMainFormUsers.Name = "IconButtonMainFormUsers"
         Me.IconButtonMainFormUsers.Size = New System.Drawing.Size(212, 41)
-        Me.IconButtonMainFormUsers.TabIndex = 5
+        Me.IconButtonMainFormUsers.TabIndex = 1
         Me.IconButtonMainFormUsers.Text = "Users"
         Me.IconButtonMainFormUsers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButtonMainFormUsers.UseVisualStyleBackColor = False
@@ -282,6 +284,26 @@ Partial Class FormMain
         Me.ToolStripStatusLabelTimeLogged.Size = New System.Drawing.Size(269, 25)
         Me.ToolStripStatusLabelTimeLogged.Text = "ToolStripStatusLabelTimeLogged"
         '
+        'IconButtonMainFormDepartment
+        '
+        Me.IconButtonMainFormDepartment.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
+        Me.IconButtonMainFormDepartment.Dock = System.Windows.Forms.DockStyle.Top
+        Me.IconButtonMainFormDepartment.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButtonMainFormDepartment.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.IconButtonMainFormDepartment.ForeColor = System.Drawing.Color.White
+        Me.IconButtonMainFormDepartment.IconChar = FontAwesome.Sharp.IconChar.UserFriends
+        Me.IconButtonMainFormDepartment.IconColor = System.Drawing.Color.White
+        Me.IconButtonMainFormDepartment.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButtonMainFormDepartment.IconSize = 30
+        Me.IconButtonMainFormDepartment.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.IconButtonMainFormDepartment.Location = New System.Drawing.Point(3, 158)
+        Me.IconButtonMainFormDepartment.Name = "IconButtonMainFormDepartment"
+        Me.IconButtonMainFormDepartment.Size = New System.Drawing.Size(212, 41)
+        Me.IconButtonMainFormDepartment.TabIndex = 9
+        Me.IconButtonMainFormDepartment.Text = "Departments"
+        Me.IconButtonMainFormDepartment.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.IconButtonMainFormDepartment.UseVisualStyleBackColor = False
+        '
         'FormMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 32.0!)
@@ -328,4 +350,5 @@ Partial Class FormMain
     Friend WithEvents IconButtonMainFormSettings As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButtonMainFormLogout As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButtonMainFormUserAccess As FontAwesome.Sharp.IconButton
+    Friend WithEvents IconButtonMainFormDepartment As FontAwesome.Sharp.IconButton
 End Class
